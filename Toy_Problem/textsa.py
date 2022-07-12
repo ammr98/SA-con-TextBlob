@@ -21,7 +21,7 @@ with open("original.txt","r") as f:
       print(eng.sentiment.subjectivity,"\n")
       ori_count +=1
     except:
-    #Mostramos este mensaje en caso de que se presente algún problema
+    #En caso de que se presente algún error
       print ("El elemento no está presente")
 
 print("----------------------------------------------------")
@@ -40,7 +40,4 @@ with open("correct.txt","r") as f:
       print(eng.sentiment.subjectivity,"\n")
       cor_count +=1
     except:
-      print('el elemento no esta presente')
- 
-#print("Precisión positiva = {}% via {} ejemplos".format(pos_correct/pos_count*100.0, pos_count))
-#print("Precisión negativa = {}% via {} ejemplos".format(neg_correct/neg_count*100.0, neg_count))
+      print('El elemento no esta presente')
